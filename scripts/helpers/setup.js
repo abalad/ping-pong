@@ -12,8 +12,8 @@ function setup() {
 function draw() {
     field.draw();
     line.draw();
+    scoreboard.draw();
     racketLeft.draw();
     racketRight.draw();
     ball.draw();
-    drawScoreboard();
 }
