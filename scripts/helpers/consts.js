@@ -1,4 +1,4 @@
-// Global Constants
+const GLOBAL_FPS = 1000 / 60;  // 60FPS
 const GLOBAL_WIDTH = window.innerWidth;
 const GLOBAL_HEIGHT = window.innerHeight;
 const GLOBAL_FIELD_COLOR = '#21BD80';
