@@ -13,8 +13,8 @@ function draw() {
     field.draw();
     line.draw();
 
-    drawRacketLeft();
-    drawRacketRight();
+    racketLeft.draw();
+    racketRight.draw();
     drawBall();
     drawScoreboard();
 }

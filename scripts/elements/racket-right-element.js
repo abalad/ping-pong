@@ -1,9 +1,10 @@
-function drawRacketRight() {
-    const x = window.innerWidth - GLOBAL_LINE_WIDTH - 10;
-    const y = 100;
-    const width = GLOBAL_LINE_WIDTH;
-    const height = 200;
-
-    canvasContext.fillStyle = '#FFFFFF';
-    canvasContext.fillRect(x, y, width, height);
+const racketRight = {
+    y: 110,
+    x: GLOBAL_WIDTH - GLOBAL_LINE_WIDTH - GLOBAL_RACKET_GAPX,
+    width: GLOBAL_LINE_WIDTH,
+    height: 200,
+    draw: function () {
+        canvasContext.fillStyle = GLOBAL_DEFAULT_ELEMENT_COLOR;
+        canvasContext.fillRect(this.x, this.y, this.width, this.height);
+    }
 }
