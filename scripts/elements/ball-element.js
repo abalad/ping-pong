@@ -5,7 +5,7 @@ function drawBall() {
     const startAngle = 0;
     const endAngle = 2 * Math.PI;
 
-    canvasContext.beginPath();
+    canvasContext.beginPath(); 
     canvasContext.arc(x, y, r, startAngle, endAngle, false);
     canvasContext.fill();
 }

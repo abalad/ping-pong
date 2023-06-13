@@ -4,3 +4,4 @@ drawLine();
 drawRacketLeft();
 drawRacketRight();
 drawBall();
+drawScoreboard();
