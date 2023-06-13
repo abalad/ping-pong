@@ -1,4 +1,8 @@
-function drawField() {
-    canvasContext.fillStyle = '#21bd80';
-    canvasContext.fillRect(0,0, window.innerWidth, window.innerHeight);
+const field = {
+    width: GLOBAL_WIDTH,
+    height: GLOBAL_HEIGHT,
+    draw: function () {
+        canvasContext.fillStyle = GLOBAL_FIELD_COLOR;
+        canvasContext.fillRect(0,0, this.width, this.height);
+    }
 }

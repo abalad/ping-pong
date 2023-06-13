@@ -1,0 +1,4 @@
+function boostrap() {
+    setup();
+    draw();
+}

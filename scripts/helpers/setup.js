@@ -9,3 +9,12 @@ function setup() {
     canvasContext.width = window.innerWidth;
     canvasContext.height = window.innerHeight;
 }
+
+function draw() {
+    field.draw();
+    drawLine();
+    drawRacketLeft();
+    drawRacketRight();
+    drawBall();
+    drawScoreboard();
+}
