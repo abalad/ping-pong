@@ -3,3 +3,4 @@ drawField();
 drawLine();
 drawRacketLeft();
 drawRacketRight();
+drawBall();
