@@ -1,9 +1,10 @@
-function drawLine() {
-    const x = window.innerWidth / 2 - lineWidth / 2;
-    const y = 0;
-    const width = lineWidth;
-    const height = window.innerHeight;
-
-    canvasContext.fillStyle = '#FFFFFF';
-    canvasContext.fillRect(x, y, width, height);
+const line = {
+    x: GLOBAL_WIDTH / 2 - GLOBAL_LINE_WIDTH / 2,
+    y: 0,
+    width: GLOBAL_LINE_WIDTH,
+    height: GLOBAL_HEIGHT,
+    draw: function () {
+        canvasContext.fillStyle = GLOBAL_DEFAULT_ELEMENT_COLOR;
+        canvasContext.fillRect(this.x,this.y, this.width, this.height);
+    }
 }

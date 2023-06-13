@@ -1,7 +1,7 @@
 function drawRacketRight() {
-    const x = window.innerWidth - lineWidth - 10;
+    const x = window.innerWidth - GLOBAL_LINE_WIDTH - 10;
     const y = 100;
-    const width = lineWidth;
+    const width = GLOBAL_LINE_WIDTH;
     const height = 200;
 
     canvasContext.fillStyle = '#FFFFFF';

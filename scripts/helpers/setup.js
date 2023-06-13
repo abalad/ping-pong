@@ -1,18 +1,18 @@
 const canvasElement = document.querySelector('canvas');
 const canvasContext = canvasElement.getContext('2d');
-const lineWidth = 15;
 
 function setup() {
-    canvasElement.width = window.innerWidth;
-    canvasElement.height = window.innerHeight;
+    canvasElement.width = GLOBAL_WIDTH;
+    canvasElement.height = GLOBAL_HEIGHT;
 
-    canvasContext.width = window.innerWidth;
-    canvasContext.height = window.innerHeight;
+    canvasContext.width = GLOBAL_WIDTH;
+    canvasContext.height = GLOBAL_HEIGHT;
 }
 
 function draw() {
     field.draw();
-    drawLine();
+    line.draw();
+
     drawRacketLeft();
     drawRacketRight();
     drawBall();
