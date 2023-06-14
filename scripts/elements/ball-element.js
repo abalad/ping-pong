@@ -1,6 +1,6 @@
 const ball = {
-    x: 0,
-    y: 0,
+    x: field.width / 2,
+    y: field.height / 2,
     r: 20,
     speed: 5,
     directionY: 1,
@@ -22,7 +22,7 @@ const ball = {
                 this._reverseX()
             } else {
                 scoreboard.increaseHuman();
-                this._resetPosition();
+                this._pointUp();
             }
         }
     },
@@ -35,7 +35,7 @@ const ball = {
                 this._reverseX()
             } else {
                 scoreboard.increaseComputer();
-                this._resetPosition();
+                this._pointUp();
             }
         }
     },
@@ -57,6 +57,15 @@ const ball = {
     _resetPosition: function () {
         this.x = field.width / 2;
         this.y = field.height / 2;
+    },
+    _speedUp: function () {
+        if(this.speed < GLOBAL_BALL_MAX_SPEED) {
+            this.speed += 2;
+        }
+    },
+    _pointUp: function () {
+        this._resetPosition();
+        this._speedUp();
     },
     draw: function  () {
         canvasContext.beginPath();
