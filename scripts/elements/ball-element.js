@@ -60,12 +60,13 @@ const ball = {
     },
     _speedUp: function () {
         if(this.speed < GLOBAL_BALL_MAX_SPEED) {
-            this.speed += 2;
+            this.speed += 3;
         }
     },
     _pointUp: function () {
         this._resetPosition();
         this._speedUp();
+        racketRight.speedUp()
     },
     draw: function  () {
         canvasContext.beginPath();
