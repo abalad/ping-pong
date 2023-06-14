@@ -2,7 +2,7 @@ const ball = {
     x: field.width / 2,
     y: field.height / 2,
     r: 20,
-    speed: 5,
+    speed: GLOBAL_BALL_DEFAULT_SPEED,
     directionY: 1,
     directionX: 1,
     _validateEdgesTouched: function () {
@@ -60,7 +60,7 @@ const ball = {
     },
     _speedUp: function () {
         if(this.speed < GLOBAL_BALL_MAX_SPEED) {
-            this.speed += 3;
+            this.speed += GLOBAL_BALL_SPEED;
         }
     },
     _pointUp: function () {
